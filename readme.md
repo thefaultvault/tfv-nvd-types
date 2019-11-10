@@ -7,8 +7,8 @@ The terms and acronyms used are synonymous with NVD. For more information regard
 ### Feed Types
 The current types cover the following feeds:
 
-| feed               	| type 	| version 	| notes                                                       	|   	|
-|--------------------	|------	|---------	|-------------------------------------------------------------	|---	|
-| cve                	| json 	| 1.1     	| identical match                                             	|   	|
-| vendor comments    	| xml  	| *       	| converted to json, namespaces removed, some values inferred 	|   	|
-| official cpe dict. 	| xml  	| 2.3     	| converted to json, namespaces removed, some values inferred 	|   	|
+| feed               	| type 	| version 	| notes                                                       	|
+|--------------------	|------	|---------	|-------------------------------------------------------------	|
+| cve                	| json 	| 1.1     	| identical match                                             	|
+| vendor comments    	| xml  	| *       	| converted to json, namespaces removed, some values inferred 	|
+| official cpe dict. 	| xml  	| 2.3     	| converted to json, namespaces removed, some values inferred 	|
