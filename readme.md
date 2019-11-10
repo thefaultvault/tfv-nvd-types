@@ -6,6 +6,7 @@ The terms and acronyms used are synonymous with NVD. For more information regard
 
 ### Feed Types
 The current types cover the following feeds:
+
 | feed               	| type 	| version 	| notes                                                       	|   	|
 |--------------------	|------	|---------	|-------------------------------------------------------------	|---	|
 | cve                	| json 	| 1.1     	| identical match                                             	|   	|
