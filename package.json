@@ -1,7 +1,7 @@
 {
-  "name": "tfv-nvd-types",
+  "name": "@thefaultvault/tfv-nvd-types",
   "version": "1.0.0",
-  "description": "National Vulnerability Database feed typescript definitions.",
+  "description": "National Vulnerability Database typescript definitions for data feeds.",
   "main": "index.js",
   "repository": {
     "type": "git",
@@ -9,6 +9,8 @@
   },
   "keywords": [
     "nvd",
+    "cve",
+    "cpe",
     "tfv",
     "thefaultvault",
     "vulnerability",
