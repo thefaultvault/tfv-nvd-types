@@ -1,5 +1,6 @@
-
-
+/**
+ * National Vulnerability Database Schema.
+ */
 declare namespace NVD {
     /**
      * Common types across NVD objects.
@@ -30,9 +31,61 @@ declare namespace NVD {
         }
     }
     /**
-     * Common Vulnerability Enumerations
+     * Common Vulnerability Enumerations.
      */
     namespace CVE {
+        /**
+         * Top most container of the NVD CVE json feed.
+         * Contains some meta about the feed as well as
+         * the cve items.
+         *
+         * @export
+         * @interface ICveFeed
+         */
+        export interface ICveFeed {
+            /**
+             * Type of data in the feed.
+             *
+             * @type {string}
+             * @memberof ICveFeed
+             */
+            CVE_data_type: string,
+            /**
+             * Format of the data in the feed.
+             *
+             * @type {string}
+             * @memberof ICveFeed
+             */
+            CVE_data_format: string,
+            /**
+             * Version of the data format & type.
+             *
+             * @type {number}
+             * @memberof ICveFeed
+             */
+            CVE_data_version: number,
+            /**
+             * Number of cves in the CVE_Items list.
+             *
+             * @type {number}
+             * @memberof ICveFeed
+             */
+            CVE_data_numberOfCVEs: number,
+            /**
+             * Timestamp the feed was created/updated.
+             *
+             * @type {string}
+             * @memberof ICveFeed
+             */
+            CVE_data_timestamp: string
+            /**
+             * List of cve items.
+             *
+             * @type {ICveItem[]}
+             * @memberof ICveFeed
+             */
+            CVE_Items: ICveItem[]
+        }
         /**
          * A vendor supplied comment for a given cve.
          *
@@ -560,14 +613,14 @@ declare namespace NVD {
              * @type {ICveImpactBaseMetricV3}
              * @memberof ICveImpact
              */
-            baseMetricV3: ICveImpactBaseMetricV3,
+            baseMetricV3?: ICveImpactBaseMetricV3,
             /**
              * Contains all the cvss2 information.
              *
              * @type {ICveImpactBaseMetricV2}
              * @memberof ICveImpact
              */
-            baseMetricV2: ICveImpactBaseMetricV2
+            baseMetricV2?: ICveImpactBaseMetricV2
         }
         /**
          * Contains all information for a cve.
