@@ -1,6 +1,6 @@
 {
   "name": "@thefaultvault/tfv-nvd-types",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "National Vulnerability Database typescript definitions for data feeds.",
   "main": "index.js",
   "repository": {
