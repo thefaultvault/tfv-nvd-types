@@ -782,3 +782,5 @@ declare namespace NVD {
         }
     }
 }
+
+export = NVD;
