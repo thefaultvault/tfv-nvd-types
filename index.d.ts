@@ -5,7 +5,7 @@ export namespace NVD {
     /**
      * Common types across NVD objects.
      */
-    namespace Common {
+    export namespace Common {
         /**
          * Description of some value (used on multiple objects).
          *
@@ -33,7 +33,7 @@ export namespace NVD {
     /**
      * Common Vulnerability Enumerations.
      */
-    namespace CVE {
+    export namespace CVE {
         /**
          * Top most container of the NVD CVE json feed.
          * Contains some meta about the feed as well as
@@ -669,7 +669,7 @@ export namespace NVD {
     /**
      * Common Product Enumerations.
      */
-    namespace CPE {
+    export namespace CPE {
         /**
          * Contains information for a cpe reference.
          *
