@@ -1,7 +1,7 @@
 /**
  * National Vulnerability Database Schema.
  */
-declare namespace NVD {
+export namespace NVD {
     /**
      * Common types across NVD objects.
      */
@@ -782,5 +782,3 @@ declare namespace NVD {
         }
     }
 }
-
-export = NVD;
